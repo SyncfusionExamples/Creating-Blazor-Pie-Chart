@@ -1,0 +1,39 @@
+﻿@page "/"
+@using Syncfusion.Blazor.Charts
+
+<h1>Pie Chart</h1>
+
+<div class="control-section">
+    <SfAccumulationChart Title="Mobile Browser Statistics" EnableAnimation="false">
+        <AccumulationChartTooltipSettings Enable="true"></AccumulationChartTooltipSettings>
+        <AccumulationChartLegendSettings Visible="false"></AccumulationChartLegendSettings>
+        <AccumulationChartSeriesCollection>
+            <AccumulationChartSeries DataSource="@dataSource" XName="xValue" YName="yValue" Name="Browser" Radius="@OuterRadius" StartAngle="@StartAngle" EndAngle="@EndAngle"
+                                     InnerRadius="0%" ExplodeIndex="@ExplodeIndex" Explode="true" ExplodeOffset="@ExplodeRadius">
+                <AccumulationDataLabelSettings Visible="true" Name="xValue" Position="AccumulationLabelPosition.Outside"></AccumulationDataLabelSettings>
+            </AccumulationChartSeries>
+        </AccumulationChartSeriesCollection>
+    </SfAccumulationChart>
+</div>
+
+
+@code{
+    public int StartAngle = 0, value = 0, EndAngle = 360, radiusValue = 70, exploderadius = 10;
+    public double ExplodeIndex = 1;
+    public string OuterRadius = "70%", ExplodeRadius = "10%";
+    public class PieData1
+    {
+        public string xValue { get; set; }
+        public double yValue { get; set; }
+        public string r { get; set; }
+    }
+    private List<PieData1> dataSource = new List<PieData1>
+{
+    new PieData1 { xValue = "Chrome", yValue = 37},
+    new PieData1 { xValue = "UC Browse",    yValue = 17},
+    new PieData1 { xValue = "iPhone",  yValue = 19 },
+    new PieData1 { xValue = "Others", yValue = 4 },
+    new PieData1 { xValue = "Opera", yValue = 11 },
+    new PieData1 { xValue = "Android", yValue = 12}
+    };
+}
