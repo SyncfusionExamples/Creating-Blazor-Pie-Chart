@@ -1,6 +1,19 @@
+# Create a Blazor PieChart
+
 The [Blazor Pie Chart](https://www.syncfusion.com/blazor-components/blazor-charts/chart-types/pie-chart?utm_source=github&utm_medium=listing&utm_campaign=blazor-pie-chart-github-samples) is a circular graphic, which is ideal for displaying proportional values between different categories.
 
 Syncfusion's [Blazor Chart library](https://www.syncfusion.com/kb/12397/creating-charts-in-blazor-quick-getting-started-guide?utm_source=github&utm_medium=listing&utm_campaign=blazor-pie-chart-github-samples) includes functionality for plotting more than [30+ chart types](https://www.syncfusion.com/blazor-components/blazor-charts/chart-types?utm_source=github&utm_medium=listing&utm_campaign=blazor-pie-chart-github-samples) along with pie chart. Each chart type is easily configured with built-in support for creating stunning visual effects.
+
+## Prerequisites
+
+* Visual Studio 2022
+
+## How to run the project
+
+* Checkout this project to a location in your disk.
+* Open the solution file using the Visual Studio 2022.
+* Restore the NuGet packages by rebuilding the solution.
+* Run the project.
 
 ## Features and Benefits
 
